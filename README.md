@@ -1,5 +1,7 @@
 # Bootimus-dnsmasq
 
+<https://github.com/garybowers/bootimus?tab=readme-ov-file>
+
 ```bash
 git clone https://github.com/JIANMOP/Bootimus-dnsmasq.git
 cd Bootimus-dnsmasq/
