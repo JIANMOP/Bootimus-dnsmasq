@@ -1,0 +1,30 @@
+services:
+  bootimus:
+    image: garybowers/bootimus:0.1.33
+    container_name: bootimus
+    cap_add:
+      - NET_BIND_SERVICE
+    ports:
+      - "69:69/udp"
+      - "8082:8082/tcp"
+      - "8081:8081/tcp"
+    environment:
+      - BOOTIMUS_SERVER_ADDR=172.16.143.3 #替换为你的ip，最好静态
+      - BOOTIMUS_HTTP_PORT=8082
+    volumes:
+      - ./data:/data
+    restart: unless-stopped
+
+  dnsmasq:
+    image: jpillora/dnsmasq
+    container_name: bootimus-dnsmasq
+    network_mode: host
+    cap_add:
+      - NET_ADMIN
+      - NET_BIND_SERVICE
+    volumes:
+      - ./dnsmasq.conf:/etc/dnsmasq.conf
+    restart: unless-stopped
+
+networks: {}
+
