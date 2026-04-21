@@ -1,3 +1,5 @@
+# 此文档完全由AI DeepResearch的结果，请注意分辨内容真伪
+
 # 在VMware Workstation的Ubuntu虚拟机中部署与测试Bootimus Proxy-DHCP技术报告
 
 ## 1. 实验环境规划与准备
