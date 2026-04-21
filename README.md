@@ -4,6 +4,8 @@
 
 0.1.33之前的版本不支持proxy-dhcp，需要dnsmasq辅助。0.1.38版本作者内置了proxy-dhcp，可以不使用dnsmasq了。
 
+![Knowledge Graph](doc/KnowledgeGraph.svg)
+
 ```bash
 # 0.1.33版本使用方法
 git clone https://github.com/JIANMOP/Bootimus-dnsmasq.git
